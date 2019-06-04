@@ -3,7 +3,10 @@ class InvoicesController < ApplicationController
 
   def index
     @invoices = Invoice.all
-
+    
+    if params[:dateFrom].present? && params[:dateTo].present?
+      @invoices = @invoices.filter_with_date(params[:dateFrom], params[:dateTo])
+    end
     render json: @invoices
   end
 
