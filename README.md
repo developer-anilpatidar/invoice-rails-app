@@ -5,21 +5,14 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby 2.5.1
 
-* System dependencies
+* rake db:create
 
-* Configuration
+* rake db:migrate
 
-* Database creation
+* rails s
 
-* Database initialization
+make sure rails app will run on port 3000 with localhost://3000
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # invoice-rails-app
