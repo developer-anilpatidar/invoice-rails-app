@@ -39,6 +39,7 @@ class InvoicesController < ApplicationController
     end
 
     def invoice_params
+      params[:invoice] = params[:data][:attributes]
       params.require(:invoice).permit(:amount, :date)
     end
 end
